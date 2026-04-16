@@ -1,13 +1,16 @@
 body {
-  font-family: Arial;
   margin: 0;
-  text-align: center;
+  font-family: Arial;
+  background: #0d0d0d;
+  color: white;
 }
 
+/* Header */
 header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
   background: black;
-  color: white;
-  padding: 15px;
 }
 
 nav a {
@@ -16,26 +19,62 @@ nav a {
   text-decoration: none;
 }
 
-.hero {
-  padding: 60px;
-  background: #f4f4f4;
+nav a:hover {
+  color: orange;
 }
 
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Button */
 .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
   background: orange;
-  padding: 10px 20px;
   color: white;
   text-decoration: none;
+  border-radius: 5px;
 }
 
+/* Services */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Stats */
 .stats {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 40px;
+  background: #111;
 }
 
-.videos iframe {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px;
 }
