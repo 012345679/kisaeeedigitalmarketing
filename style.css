@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 60px;
+  background: #f4f4f4;
+}
+
+.btn {
+  background: orange;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.videos iframe {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
