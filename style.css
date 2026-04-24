@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #000;
+  background: radial-gradient(circle at top, #0f172a, #020617);
   color: #fff;
 }
 
@@ -10,18 +10,18 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 8%;
-  border-bottom: 1px solid #111;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
 }
 
 nav a {
   color: #aaa;
   margin-left: 20px;
   text-decoration: none;
-  font-size: 14px;
 }
 
 nav a:hover {
-  color: #39ff14;
+  color: #00ffcc;
 }
 
 /* HERO */
@@ -30,18 +30,16 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 70px;
+  font-size: 65px;
   line-height: 1.1;
-  font-weight: 700;
-}
-
-.highlight {
-  color: #39ff14;
+  background: linear-gradient(90deg, #00ffcc, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
   margin-top: 20px;
-  color: #888;
+  color: #94a3b8;
   max-width: 500px;
 }
 
@@ -49,12 +47,13 @@ nav a:hover {
 .btn {
   display: inline-block;
   margin-top: 25px;
-  padding: 12px 28px;
-  background: #39ff14;
+  padding: 14px 32px;
+  background: linear-gradient(90deg, #00ffcc, #38bdf8);
   color: #000;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,255,204,0.4);
 }
 
 /* SECTION */
@@ -64,30 +63,38 @@ section {
 
 /* SERVICES */
 .service {
-  border-top: 1px solid #111;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   padding: 30px 0;
 }
 
 .service h3 {
-  font-size: 22px;
-  color: #39ff14;
+  color: #00ffcc;
 }
 
 /* STATS */
 .stats {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
 .stats h2 {
   font-size: 40px;
-  color: #39ff14;
+  background: linear-gradient(90deg, #00ffcc, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 80px;
+  background: linear-gradient(90deg, #00ffcc20, #38bdf820);
+  border-radius: 20px;
 }
 
 /* FOOTER */
 footer {
   padding: 40px 8%;
-  border-top: 1px solid #111;
   color: #666;
 }
