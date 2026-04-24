@@ -1,108 +1,93 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>KISAEEE</title>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #fff;
+}
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #000;
+  border-bottom: 1px solid #222;
+}
 
-</head>
+nav a {
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+}
 
-<body>
+nav a:hover {
+  color: #7CFC00;
+}
 
-<header>
-  <h2>KISAEEE</h2>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Work</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
 
-<!-- HERO -->
-<section class="hero">
+.hero h1 {
+  font-size: 50px;
+  color: #7CFC00;
+}
 
-  <h1>
-    Your Customers Are Online.<br>
-    Are You?
-  </h1>
+.hero h2 {
+  font-size: 28px;
+}
 
-  <p>
-    Still using traditional marketing?  
-    You’re losing customers every day.
-  </p>
+.hero p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #aaa;
+}
 
-  <p>
-    People search. Scroll. Compare.  
-    If you’re not there — you don’t exist.
-  </p>
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #7CFC00;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
 
-  <a href="#" class="btn">Start Digital Marketing</a>
+/* Sections */
+section {
+  padding: 80px 10%;
+}
 
-</section>
+/* Services */
+.card {
+  border: 1px solid #222;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+}
 
-<!-- SERVICES -->
-<section>
+.card h3 {
+  color: #7CFC00;
+}
 
-  <div class="service">
-    <h3>Branding</h3>
-    <p>Make your business look unforgettable.</p>
-  </div>
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
 
-  <div class="service">
-    <h3>SEO</h3>
-    <p>Show up on Google when people search.</p>
-  </div>
+.stats h3 {
+  color: #7CFC00;
+  font-size: 30px;
+}
 
-  <div class="service">
-    <h3>Ads</h3>
-    <p>Get leads instantly with paid campaigns.</p>
-  </div>
-
-  <div class="service">
-    <h3>Social Media</h3>
-    <p>Build attention where people spend time.</p>
-  </div>
-
-</section>
-
-<!-- STATS -->
-<section class="stats">
-
-  <div>
-    <h2>50+</h2>
-    <p>Projects</p>
-  </div>
-
-  <div>
-    <h2>40+</h2>
-    <p>Clients</p>
-  </div>
-
-  <div>
-    <h2>98%</h2>
-    <p>Success</p>
-  </div>
-
-  <div>
-    <h2>10+</h2>
-    <p>Team</p>
-  </div>
-
-</section>
-
-<!-- CTA -->
-<section>
-
-  <h1>Start Digital. Stay Ahead.</h1>
-  <a href="#" class="btn">Contact Us</a>
-
-</section>
-
-<footer>
-  <p>© 2026 KISAEEE</p>
-</footer>
-
-</body>
-</html>
+/* Footer */
+footer {
+  background: #000;
+  padding: 40px;
+  border-top: 1px solid #222;
+}
