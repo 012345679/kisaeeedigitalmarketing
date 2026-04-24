@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #0f172a, #020617);
+  background: #000;
   color: #fff;
 }
 
@@ -10,18 +10,18 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 8%;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #111;
 }
 
 nav a {
   color: #aaa;
   margin-left: 20px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 nav a:hover {
-  color: #00ffcc;
+  color: #fff;
 }
 
 /* HERO */
@@ -30,16 +30,13 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 65px;
+  font-size: 70px;
   line-height: 1.1;
-  background: linear-gradient(90deg, #00ffcc, #38bdf8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
   margin-top: 20px;
-  color: #94a3b8;
+  color: #aaa;
   max-width: 500px;
 }
 
@@ -47,13 +44,16 @@ nav a:hover {
 .btn {
   display: inline-block;
   margin-top: 25px;
-  padding: 14px 32px;
-  background: linear-gradient(90deg, #00ffcc, #38bdf8);
-  color: #000;
-  font-weight: 600;
+  padding: 12px 28px;
+  border: 1px solid #fff;
+  color: #fff;
   text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,255,204,0.4);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
 }
 
 /* SECTION */
@@ -63,34 +63,30 @@ section {
 
 /* SERVICES */
 .service {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid #111;
   padding: 30px 0;
 }
 
 .service h3 {
-  color: #00ffcc;
+  font-size: 20px;
 }
 
 /* STATS */
 .stats {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .stats h2 {
   font-size: 40px;
-  background: linear-gradient(90deg, #00ffcc, #38bdf8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* CTA */
 .cta {
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
   text-align: center;
-  padding: 80px;
-  background: linear-gradient(90deg, #00ffcc20, #38bdf820);
-  border-radius: 20px;
 }
 
 /* FOOTER */
