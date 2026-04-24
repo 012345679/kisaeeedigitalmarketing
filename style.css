@@ -5,89 +5,89 @@ body {
   color: #fff;
 }
 
-/* Header */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
-  background: #000;
-  border-bottom: 1px solid #222;
+  padding: 20px 8%;
+  border-bottom: 1px solid #111;
 }
 
 nav a {
-  color: #ccc;
-  margin: 0 15px;
+  color: #aaa;
+  margin-left: 20px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 nav a:hover {
-  color: #7CFC00;
+  color: #39ff14;
 }
 
-/* Hero */
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
+  padding: 120px 8%;
 }
 
 .hero h1 {
-  font-size: 50px;
-  color: #7CFC00;
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
-.hero h2 {
-  font-size: 28px;
+.highlight {
+  color: #39ff14;
 }
 
 .hero p {
-  max-width: 700px;
-  margin: 20px auto;
-  color: #aaa;
+  margin-top: 20px;
+  color: #888;
+  max-width: 500px;
 }
 
-/* Button */
+/* BUTTON */
 .btn {
   display: inline-block;
-  padding: 14px 30px;
-  background: #7CFC00;
-  color: black;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #39ff14;
+  color: #000;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  border-radius: 6px;
 }
 
-/* Sections */
+/* SECTION */
 section {
-  padding: 80px 10%;
+  padding: 80px 8%;
 }
 
-/* Services */
-.card {
-  border: 1px solid #222;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 10px;
+/* SERVICES */
+.service {
+  border-top: 1px solid #111;
+  padding: 30px 0;
 }
 
-.card h3 {
-  color: #7CFC00;
+.service h3 {
+  font-size: 22px;
+  color: #39ff14;
 }
 
-/* Stats */
+/* STATS */
 .stats {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.stats h3 {
-  color: #7CFC00;
-  font-size: 30px;
+.stats h2 {
+  font-size: 40px;
+  color: #39ff14;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  background: #000;
-  padding: 40px;
-  border-top: 1px solid #222;
+  padding: 40px 8%;
+  border-top: 1px solid #111;
+  color: #666;
 }
