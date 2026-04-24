@@ -1,96 +1,111 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #000;
-  color: #fff;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<title>KISAEEE Digital Marketing</title>
 
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 8%;
-  border-bottom: 1px solid #111;
-}
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-nav a {
-  color: #aaa;
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 14px;
-}
+</head>
 
-nav a:hover {
-  color: #fff;
-}
+<body>
 
-/* HERO */
-.hero {
-  padding: 120px 8%;
-}
+<header>
+  <h2>KISAEEE</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-.hero h1 {
-  font-size: 70px;
-  line-height: 1.1;
-}
+<!-- HERO -->
+<section class="hero">
 
-.hero p {
-  margin-top: 20px;
-  color: #aaa;
-  max-width: 500px;
-}
+  <h1>Your Customers Are Online — Are You?</h1>
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 28px;
-  border: 1px solid #fff;
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
+  <h2>Still using only traditional marketing?</h2>
 
-.btn:hover {
-  background: #fff;
-  color: #000;
-}
+  <p>
+    You’re literally missing customers every day.  
+    Today’s customers don’t just walk in…  
+    They Google it, scroll Instagram, and check reviews first.
+  </p>
 
-/* SECTION */
-section {
-  padding: 80px 8%;
-}
+  <p>
+    That’s where Digital Marketing comes in.  
+    With ads, SEO, and content — your business shows up exactly where people are.
+  </p>
 
-/* SERVICES */
-.service {
-  border-top: 1px solid #111;
-  padding: 30px 0;
-}
+  <a href="#" class="btn">Start Digital Marketing</a>
 
-.service h3 {
-  font-size: 20px;
-}
+</section>
 
-/* STATS */
-.stats {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+<!-- INTRO -->
+<section>
+  <h2>About KISAEEE Digital Trend</h2>
 
-.stats h2 {
-  font-size: 40px;
-}
+  <p>
+    We understand that every brand starts with an idea, 
+    and sometimes all it needs is the right direction to grow.  
+    At KISAEEE Digital Trend, we keep things simple and easy to connect with.
+  </p>
+</section>
 
-/* CTA */
-.cta {
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
-  text-align: center;
-}
+<!-- SERVICES -->
+<section>
+  <h2>Our Services</h2>
 
-/* FOOTER */
-footer {
-  padding: 40px 8%;
-  color: #666;
-}
+  <div class="card">
+    <h3>Branding</h3>
+    <p>
+      Branding gives your business a unique identity that people trust and recognize.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Marketing</h3>
+    <p>
+      Marketing spreads your message and brings your brand closer to customers.
+    </p>
+  </div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div>
+    <h3>50+</h3>
+    <p>Projects</p>
+  </div>
+
+  <div>
+    <h3>40+</h3>
+    <p>Clients</p>
+  </div>
+
+  <div>
+    <h3>98%</h3>
+    <p>Success Rate</p>
+  </div>
+
+  <div>
+    <h3>10+</h3>
+    <p>Team</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <h2>Start Digital Marketing Today</h2>
+  <a href="#" class="btn">Contact Now</a>
+</section>
+
+<footer>
+  <p>© 2026 KISAEEE Digital Marketing</p>
+</footer>
+
+</body>
+</html>
