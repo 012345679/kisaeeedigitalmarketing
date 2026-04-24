@@ -1,91 +1,102 @@
-/* BODY (keep black but improve tone) */
 body {
-  background: #0b0b0f;
-  color: #f1f5f9;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0b0b0b;
+  color: white;
 }
 
 /* HEADER */
 header {
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #000;
 }
 
-/* NAV LINKS */
+.logo {
+  color: orange;
+}
+
 nav a {
-  color: #d1d5db;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
 }
 
 nav a:hover {
-  color: #00d4ff;
+  color: orange;
 }
 
 /* HERO */
 .hero {
-  background: #0b0b0f; /* keep same */
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  color: #ffffff;
+  color: orange;
+  font-size: 42px;
 }
 
 .hero p {
-  color: #9ca3af;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  color: #ccc;
 }
 
 .hero button {
-  background: #00d4ff;
-  color: #000;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: orange;
+  color: black;
+  cursor: pointer;
 }
 
-.hero button:hover {
-  background: #00b8e6;
+/* INTRO */
+.intro {
+  text-align: center;
+  padding: 40px;
+  color: #aaa;
 }
 
 /* SERVICES */
 .services {
-  background: #0b0b0f;
+  padding: 50px 10%;
+  text-align: center;
 }
 
-.card {
-  background: #111827;
-  border: 1px solid rgba(255,255,255,0.05);
+.services h2 {
+  color: orange;
 }
 
-.card:hover {
-  background: #1f2937;
+.service-box {
+  margin: 20px;
 }
 
 /* STATS */
 .stats {
-  background: #0f172a;
-  color: #00d4ff;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background: #111;
 }
 
 /* ABOUT */
 .about {
-  background: #0b0b0f;
+  text-align: center;
+  padding: 50px;
 }
 
-.about p {
-  color: #9ca3af;
-}
-
-/* CTA */
-.cta {
-  background: #0b0b0f;
-}
-
-.cta button {
-  background: #22c55e;
-  color: white;
-}
-
-.cta button:hover {
-  background: #16a34a;
+.about h2 {
+  color: orange;
 }
 
 /* FOOTER */
 footer {
-  background: #000;
-  color: #6b7280;
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: #777;
 }
