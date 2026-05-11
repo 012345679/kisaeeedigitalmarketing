@@ -1,31 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | KISAEEE Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap)" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-  <h1>Our Services</h1>
-</header>
-
-<section>
-  <h2>Branding</h2>
-  <ul>
-    <li>Logo Design</li>
-    <li>Business Card</li>
-    <li>Profile Setup</li>
-  </ul>
-
-  <h2>Marketing</h2>
-  <ul>
-    <li>SEO</li>
-    <li>Google Ads</li>
-    <li>Social Media Marketing</li>
-  </ul>
-</section>
-
+    <canvas id="bg-canvas"></canvas>
+    <div class="cursor-follower"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">KISAEEE</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">What We Offer</span>
+            <h1 class="page-title">Our <span class="gradient-text">Services</span></h1>
+            <p class="page-subtitle">Comprehensive branding and marketing solutions to elevate your business.</p>
+        </div>
+    </section>
+    <section class="services-full">
+        <div class="container">
+            <!-- Branding Section -->
+            <div class="service-section">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="service-info">
+                        <h2>Branding</h2>
+                        <p>Build a memorable brand identity that resonates with your audience and stands out from the competition.</p>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <div class="feature-card" data-tilt>
+                        <div class="feature-icon">✨</div>
+                        <h4>Logo Design</h4>
+                        <p>Unique, memorable logos that capture your brand essence and make lasting impressions.</p>
+                    </div>
+                    <div class="feature-card" data-tilt>
+                        <div class="feature-icon">💳</div>
+                        <h4>Business Cards</h4>
+                        <p>Professional, eye-catching business cards that leave a powerful first impression.</p>
+                    </div>
+                    <div class="feature-card" data-tilt>
+                        <div class="feature-icon">📱</div>
+                        <h4>Profile Setup</h4>
+                        <p>Complete social media and business profile setup for consistent brand presence.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Marketing Section -->
+            <div class="service-section">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="service-info">
+                        <h2>Marketing</h2>
+                        <p>Data-driven marketing strategies that attract, engage, and convert your target audience.</p>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <div class="feature-card" data-tilt>
+                        <div class="feature-icon">🔍</div>
+                        <h4>SEO</h4>
+                        <p>Search Engine Optimization to boost your rankings and drive organic traffic.</p>
+                    </div>
+                    <div class="feature-card" data-tilt>
+                        <div class="feature-icon">📢</div>
+                        <h4>Google Ads</h4>
+                        <p>Targeted advertising campaigns that maximize ROI and reach your ideal customers.</p>
+                    </div>
+                    <div class="feature-card" data-tilt>
+                        <div class="feature-icon">📲</div>
+                        <h4>Social Media Marketing</h4>
+                        <p>Strategic social media presence that builds community and drives engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Preview -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a <span class="gradient-text">Custom Solution</span>?</h2>
+                <p>Let's discuss your requirements and create a tailored package.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    <span>Get a Quote</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">KISAEEE</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p>Digital Trend Agency helping brands grow online.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:your@email.com">your@email.com</a></li>
+                            <li><a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KISAEEE Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js)"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
