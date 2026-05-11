@@ -1,28 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About Us</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | KISAEEE Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap)" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-  <h1>About Us</h1>
-</header>
-
-<section>
-  <p>We believe every brand has a story. Our goal is to help businesses grow with clarity and confidence.</p>
-
-  <h3>Our Story</h3>
-  <p>We started with creativity and passion to help businesses build identity.</p>
-
-  <h3>Vision</h3>
-  <p>To help businesses grow in the digital world.</p>
-
-  <h3>Mission</h3>
-  <p>To deliver strong digital solutions for long-term success.</p>
-</section>
-
+    <canvas id="bg-canvas"></canvas>
+    <div class="cursor-follower"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">KISAEEE</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Who We Are</span>
+            <h1 class="page-title">About <span class="gradient-text">Us</span></h1>
+            <p class="page-subtitle">We believe every brand has a story. Our goal is to help businesses grow with clarity and confidence.</p>
+        </div>
+    </section>
+    <!-- Story Section -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-card" data-tilt>
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+                        </svg>
+                    </div>
+                    <h3>Our Story</h3>
+                    <p>We started with creativity and passion to help businesses build their unique identity. From humble beginnings, we've grown into a team of dedicated professionals committed to excellence.</p>
+                </div>
+                <div class="about-card" data-tilt>
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/>
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To help businesses grow and thrive in the digital world by providing innovative solutions that drive real results and lasting success.</p>
+                </div>
+                <div class="about-card" data-tilt>
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                        </svg>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To deliver strong digital solutions for long-term success. We combine strategy, creativity, and technology to transform brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What Drives Us</span>
+                <h2 class="section-title">Our Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-item">
+                    <span class="value-number">01</span>
+                    <h4>Innovation</h4>
+                    <p>Constantly pushing boundaries</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-number">02</span>
+                    <h4>Quality</h4>
+                    <p>Excellence in every detail</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-number">03</span>
+                    <h4>Integrity</h4>
+                    <p>Trust and transparency always</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-number">04</span>
+                    <h4>Passion</h4>
+                    <p>Love for what we do</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">KISAEEE</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p>Digital Trend Agency helping brands grow online.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:your@email.com">your@email.com</a></li>
+                            <li><a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KISAEEE Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js)"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
