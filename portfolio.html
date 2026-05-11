@@ -1,23 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | KISAEEE Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap)" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-  <h1>Portfolio</h1>
-</header>
-
-<section class="videos">
-
-  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
-  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
-  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
-
-</section>
-
+    <canvas id="bg-canvas"></canvas>
+    <div class="cursor-follower"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">KISAEEE</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <section class="page-header">
+        <div class="container">
+            <span class="section-tag">Our Work</span>
+            <h1 class="page-title"><span class="gradient-text">Portfolio</span></h1>
+            <p class="page-subtitle">Explore our latest projects and see how we've helped brands succeed.</p>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding" data-tilt>
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>Brand Identity</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Tech Startup Rebrand</h3>
+                        <p>Complete brand identity design</p>
+                        <span class="portfolio-tag">Branding</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="marketing" data-tilt>
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>SEO Campaign</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Growth</h3>
+                        <p>300% increase in organic traffic</p>
+                        <span class="portfolio-tag">Marketing</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="social" data-tilt>
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>Social Media</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Restaurant Launch</h3>
+                        <p>50K followers in 3 months</p>
+                        <span class="portfolio-tag">Social Media</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="branding" data-tilt>
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>Logo Design</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Fitness Brand</h3>
+                        <p>Modern minimalist identity</p>
+                        <span class="portfolio-tag">Branding</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="marketing" data-tilt>
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>Google Ads</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Real Estate Campaign</h3>
+                        <p>200% ROI on ad spend</p>
+                        <span class="portfolio-tag">Marketing</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="social" data-tilt>
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span>Content Strategy</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Fashion Brand</h3>
+                        <p>Viral campaign with 1M+ reach</p>
+                        <span class="portfolio-tag">Social Media</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to Be Our <span class="gradient-text">Next Success Story</span>?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    <span>Start Your Project</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">KISAEEE</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p>Digital Trend Agency helping brands grow online.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:your@email.com">your@email.com</a></li>
+                            <li><a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KISAEEE Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js)"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
